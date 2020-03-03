@@ -1,0 +1,141 @@
+:root {
+	--red: hsl(0, 100%, 74%);
+	--green: hsl(154, 59%, 51%);
+	--blue: hsl(248, 32%, 49%);
+	--dark_blue: rgb(61, 59, 72);
+	--grayish_blue: hsl(246, 25%, 77%);
+}
+
+body {
+	font-size: 16px;
+	background-color: var(--red);
+	background-image: url("../images/bg-intro-desktop.png");
+	color: #fff;
+	height: 100vh;
+}
+
+* {
+	font-family: 'Poppins';
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	margin: 0 3rem;
+}
+
+.wrapper-left-column,
+.wrapper-right-column {
+	max-width: 540px;
+	width: 100%;
+}
+
+.page-heading {
+	font-weight: 700;
+	font-size: 2.25rem;
+	line-height: 3.5rem;
+}
+
+.page-description {
+	margin: 1.25rem 0;
+}
+
+.page-free-button {
+	background: var(--blue);
+	text-align: center;
+	padding: 1rem;
+	box-sizing: border-box;
+	margin: 2rem 0;
+	border-radius: 0.5rem;
+	box-shadow: 0px 0.5rem 0px 0px rgba(0, 0, 0, 0.125), inset 0px 0px 0.125rem 0px rgba(0, 0, 0, 0.25);
+}
+
+.page-form-container {
+	box-sizing: border-box;
+	padding: 2rem;
+	border-radius: 0.5rem;
+	background-color: #fff;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0.5rem 0px 0px rgba(0, 0, 0, 0.125), inset 0px 0px 0.125rem 0px rgba(0, 0, 0, 0.25);
+}
+
+.page-form-container .page-form-container-input {
+	border: 0.0625rem var(--grayish_blue) solid;
+	border-radius: 0.25rem;
+	box-sizing: border-box;
+	padding: 1rem 2rem;
+	font-weight: 600;
+	text-overflow: ellipsis;
+	color: var(--dark_blue);
+}
+
+.page-form-container-input.invalid {
+	background-image: url("../images/icon-error.svg");
+	background-repeat: no-repeat;
+	background-position: right 1rem center;
+	padding-right: 3.5rem;
+	border-color: var(--red);
+	color: var(--red);
+}
+
+.page-form-container .page-form-container-input:focus {
+	border-color: var(--blue);
+	outline: none;
+}
+
+.page-form-container-button {
+	background: var(--green);
+	text-align: center;
+	padding: 1rem;
+	box-sizing: border-box;
+	margin-bottom: 1rem;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+	text-transform: uppercase;
+	border-radius: 0.5rem;
+	box-shadow: 0px 0.25rem 0px 0px rgba(0, 0, 0, 0.125), inset 0px 0px 0.125rem 0px rgba(0, 0, 0, 0.25);
+}
+
+.page-form-container-terms {
+	color: var(--grayish_blue);
+	font-size: 0.625rem;
+	text-align: center;
+}
+
+.bold-text {
+	font-weight: 600;
+}
+
+.red {
+	color: var(--red);
+}
+
+.validate-text {
+	text-align: right;
+	font-style: italic;
+	font-size: 0.75rem;
+	margin-top: 0.5rem;
+}
+
+.form-row {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.page-heading,
+	.page-description {
+		text-align: center;
+	}
+}

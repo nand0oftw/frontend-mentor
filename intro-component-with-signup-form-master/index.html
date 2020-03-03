@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+
+	<title>Frontend Mentor | Intro component with sign up form</title>
+
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		.attribution {
+			font-size: 11px;
+			text-align: center;
+		}
+
+		.attribution a {
+			color: hsl(228, 45%, 44%);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper-left-column">
+			<h1 class="page-heading">Learn to code by
+				<br />watching others</h1>
+			<p class="page-description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how
+				developers think is invaluable.</p>
+		</div>
+
+		<div class="wrapper-right-column">
+			<div class="page-free-button">
+				<span class="bold-text">Try it free 7 days</span> then $20/mo. thereafter
+			</div>
+			<div class="page-form-container">
+				<div class="form-row">
+					<input class="page-form-container-input" name="first_name" placeholder="First Name" />
+				</div>
+				<div class="form-row">
+					<input class="page-form-container-input" name="last_name" placeholder="Last Name" />
+				</div>
+				<div class="form-row">
+					<input class="page-form-container-input invalid" name="email" data-type-email placeholder="Email Address" invalid-text=""
+					/>
+
+					<span class="red validate-text">Looks like this is not an email</span>
+				</div>
+				<div class="form-row">
+					<input class="page-form-container-input" name="password" type="password" placeholder="Password" />
+				</div>
+				<button class="page-form-container-button bold-text">Claim your free trial</button>
+				<span class="page-form-container-terms">By clicking the button, you are agreeing to our
+					<span class="bold-text red">Terms and Services</span>
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
